@@ -1,0 +1,21 @@
+<html>
+<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-app="githubApp">
+	<div ng-controller="MainController">
+	{{1+1}}
+	<br>
+	Title : {{title}}
+	<div ng-repeat="repo in repos">
+		{{repo.name}} <br>
+		{{repo.description}}
+		<br>
+		----------------
+	</div>
+	</div>
+
+</body>
+</html>
